@@ -27,3 +27,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+###  workspcae
+.idea
+DSA_GFG.iml
+out
+

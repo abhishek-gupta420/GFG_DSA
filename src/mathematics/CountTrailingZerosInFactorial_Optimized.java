@@ -11,15 +11,20 @@ public class CountTrailingZerosInFactorial_Optimized {
 
         System.out.println("Trailing zeros in factorial of 100 = " + countTrailingZerosInFactorial(100));
 
+        System.out.println("Trailing zeros in factorial of 200 = " + countTrailingZerosInFactorial(200));
+
     }
 
     public static int countTrailingZerosInFactorial(int n) {
 //        long fact = Factorial_Iterative.factorial(n);
 
         int count = 0;
+        int iteration = 0;
         for (int i = 5; i <= n; i = i * 5) {
             count = count + n / i;
+            iteration++;
         }
+        System.out.println("Iteration : " + iteration);
         return count;
     }
 }

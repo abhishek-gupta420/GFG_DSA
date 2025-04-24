@@ -11,7 +11,7 @@ public class Gcd_Euclied_Algo_Optimized {
         System.out.println(gcd(100000000, 200000000));
     }
 
-    static int gcd(int a, int b) {
+    static long gcd(long a, long b) {
         if (b == 0) return a;
 
         return gcd(b, a % b);

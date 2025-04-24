@@ -8,6 +8,8 @@ public class Gcd {
         System.out.println(gcd(7, 8));
         System.out.println(gcd(23, 529));
         System.out.println(gcd(100, 200));
+        System.out.println(gcd(100000000, 200000000));
+
 
     }
 // TC = O (min (a,b))

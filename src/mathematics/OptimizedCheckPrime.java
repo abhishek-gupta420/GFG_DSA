@@ -7,6 +7,22 @@ public class OptimizedCheckPrime {
         System.out.println(isPrime(4));
         System.out.println(isPrime(523));
         System.out.println(isPrime(100));
+        printPrimeNumberUpToN(100000000);
+    }
+
+    public static void printPrimeNumberUpToN(int n) {
+        System.out.println();
+        int count = 0;
+        for (int i = 1; i <= n; i++) {
+            if (isPrime(i)) {
+                System.out.print(" " + i);
+                if (count % 10 == 0)
+                    System.out.println();
+                count++;
+            }
+
+
+        }
     }
 
     public static boolean isPrime(int n) {
